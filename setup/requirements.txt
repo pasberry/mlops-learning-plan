@@ -1,0 +1,93 @@
+# MLOps Learning Plan - Requirements
+# Python 3.8+ required (3.10+ recommended)
+
+# ========================================
+# Airflow - Workflow Orchestration
+# ========================================
+apache-airflow==2.8.1
+apache-airflow-providers-sqlite==3.7.0
+
+# ========================================
+# PyTorch - Deep Learning Framework
+# ========================================
+# CPU version (lighter for development)
+# For GPU support, see: https://pytorch.org/get-started/locally/
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
+
+# ========================================
+# Data Science & ML
+# ========================================
+numpy==1.24.3
+pandas==2.1.4
+scikit-learn==1.3.2
+scipy==1.11.4
+
+# ========================================
+# Visualization
+# ========================================
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.18.0
+
+# ========================================
+# Configuration & Environment
+# ========================================
+pyyaml==6.0.1
+python-dotenv==1.0.0
+omegaconf==2.3.0
+
+# ========================================
+# Utilities
+# ========================================
+tqdm==4.66.1  # Progress bars
+python-dateutil==2.8.2
+pytz==2023.3
+
+# ========================================
+# Experiment Tracking (Optional)
+# ========================================
+# Uncomment if you want to use MLflow
+# mlflow==2.9.2
+
+# ========================================
+# Model Serving (Phase 4)
+# ========================================
+# Uncomment when you reach Phase 4
+# fastapi==0.109.0
+# uvicorn==0.27.0
+# pydantic==2.5.3
+
+# ========================================
+# Testing & Quality
+# ========================================
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.12.1  # Code formatter
+flake8==7.0.0   # Linter
+isort==5.13.2   # Import sorter
+
+# ========================================
+# Jupyter (Optional but Recommended)
+# ========================================
+jupyter==1.0.0
+ipykernel==6.27.1
+nbconvert==7.14.0
+
+# ========================================
+# HTTP & API (for data ingestion)
+# ========================================
+requests==2.31.0
+urllib3==2.1.0
+
+# ========================================
+# Database Utilities
+# ========================================
+sqlalchemy==2.0.25
+
+# ========================================
+# Development Tools
+# ========================================
+ipython==8.19.0
+rich==13.7.0  # Beautiful terminal output
