@@ -62,6 +62,116 @@ Every component you build fits into this loop. By Phase 4, you'll orchestrate th
 - **Experiment Tracking**: MLflow or custom
 - **Languages**: Python 3.10+
 
+---
+
+## ⚙️ Environment Setup (Linux)
+
+### Prerequisites
+```bash
+# Verify Python 3.8+ is installed
+python3 --version
+
+# Install if needed (Ubuntu/Debian)
+# sudo apt-get update && sudo apt-get install python3.10 python3.10-venv
+```
+
+### Quick Setup (5 minutes)
+
+```bash
+# 1. Navigate to project directory
+cd /home/user/mlops-learning-plan
+
+# 2. Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# 3. Install dependencies
+pip install --upgrade pip
+pip install -r setup/requirements.txt
+
+# 4. Initialize Airflow
+export AIRFLOW_HOME=$(pwd)/airflow
+airflow db init
+
+# 5. Create Airflow admin user
+airflow users create \
+    --username admin \
+    --firstname Admin \
+    --lastname User \
+    --role Admin \
+    --email admin@example.com \
+    --password admin
+
+# 6. Create project directories
+mkdir -p dags ml/{data,models,training} data/{raw,processed,features} logs models/{staging,production} experiments/runs
+
+# 7. Create .gitignore
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Data and Models
+data/
+models/
+experiments/runs/
+
+# Airflow
+airflow/
+logs/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+EOF
+```
+
+### Start Airflow
+
+```bash
+# Terminal 1: Start webserver
+airflow webserver --port 8080
+
+# Terminal 2: Start scheduler (in new terminal, activate venv first)
+source venv/bin/activate
+export AIRFLOW_HOME=$(pwd)/airflow
+airflow scheduler
+
+# Access UI at http://localhost:8080
+# Login: admin / admin
+```
+
+### Verify Installation
+
+```bash
+python3 << 'EOF'
+import airflow
+import torch
+import pandas as pd
+print(f"✅ Airflow {airflow.__version__}")
+print(f"✅ PyTorch {torch.__version__}")
+print(f"✅ Pandas {pd.__version__}")
+print("🎉 Environment ready!")
+EOF
+```
+
+**Detailed setup guide**: [docs/phase1/environment_setup.md](docs/phase1/environment_setup.md)
+
+---
+
 ## 📈 Progress
 
 - [ ] Phase 1: Foundations
