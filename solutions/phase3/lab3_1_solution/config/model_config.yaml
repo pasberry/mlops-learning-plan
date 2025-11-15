@@ -1,0 +1,26 @@
+# Model configuration
+model:
+  type: "tabular_classifier"
+  hidden_dims: [256, 128, 64]
+  dropout: 0.3
+
+# Training configuration
+training:
+  batch_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  epochs: 30
+  early_stopping_patience: 5
+  num_workers: 0
+
+# Data configuration
+data:
+  features_path: "data/features/v1"
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+
+# Output configuration
+output:
+  model_dir: "models/staging/ctr_model"
+  experiment_dir: "experiments/runs"
