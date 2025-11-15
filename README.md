@@ -38,6 +38,13 @@ Integrate PyTorch training into Airflow, implement experiment tracking.
 ### Phase 4: Deployment & Monitoring
 Deploy models, implement monitoring, close the feedback loop.
 
+### 🏆 Capstone Project: Mini Feed Ranking System
+Build a complete, production-grade MLOps system integrating all concepts:
+- End-to-end feed ranking pipeline (like Meta/TikTok)
+- Automated ETL, training, serving, monitoring, and retraining
+- 7 comprehensive modules over 2-3 weeks
+- **[Start Capstone →](docs/capstone/README.md)**
+
 ## 🎓 Who Is This For?
 
 **Target Student**: Senior Software Engineer transitioning to ML/MLOps
@@ -178,6 +185,7 @@ EOF
 - [ ] Phase 2: Data & Pipelines
 - [ ] Phase 3: Modeling & Training
 - [ ] Phase 4: Deployment & Monitoring
+- [ ] 🏆 Capstone: Mini Feed Ranking System
 
 ## 🏗 Project Structure
 
