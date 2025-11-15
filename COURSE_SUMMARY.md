@@ -150,6 +150,28 @@ mlops-learning-plan/
 
 ---
 
+### **Week 11-13: Capstone Project - Mini Feed Ranking System**
+- Design and architect end-to-end system
+- Build complete feed ranking pipeline
+- Integrate all Phase 1-4 concepts
+- Deploy production-ready system
+- Document and present
+
+**Deliverable**: **Portfolio-quality MLOps system (feed ranking)**
+
+📖 **Capstone Guide**: [docs/capstone/README.md](docs/capstone/README.md)
+
+**7 Modules**:
+1. System Design & Architecture
+2. ETL & Feature Engineering Pipeline
+3. Training Pipeline (PyTorch + Airflow)
+4. Model Serving (FastAPI)
+5. Monitoring & Drift Detection
+6. Automated Retraining & Promotion
+7. Integration & Documentation
+
+---
+
 ## 🛠 Technologies Covered
 
 | Category | Tools |
@@ -171,21 +193,22 @@ mlops-learning-plan/
 ## 📊 Content Statistics
 
 ### Documentation
-- **Total Files**: 35+ markdown files
-- **Total Size**: ~400KB of content
-- **Total Lines**: ~20,000 lines of documentation and code
-- **Code Examples**: 100+ complete, runnable examples
-- **Exercises**: 50+ hands-on exercises
-- **Challenges**: 15+ advanced challenges
+- **Total Files**: 44+ markdown files
+- **Total Size**: ~600KB of content
+- **Total Lines**: ~28,000 lines of documentation and code
+- **Code Examples**: 150+ complete, runnable examples
+- **Exercises**: 70+ hands-on exercises
+- **Challenges**: 20+ advanced challenges
 
 ### Labs Breakdown
-| Phase | Labs | Estimated Hours | Difficulty |
-|-------|------|-----------------|------------|
-| Phase 1 | 3 | 4-6 hours | Beginner |
-| Phase 2 | 4 | 6-8 hours | Intermediate |
-| Phase 3 | 5 | 8-10 hours | Intermediate |
-| Phase 4 | 6 | 10-12 hours | Advanced |
-| **Total** | **18** | **28-36 hours** | **Progressive** |
+| Phase | Labs/Modules | Estimated Hours | Difficulty |
+|-------|--------------|-----------------|------------|
+| Phase 1 | 3 labs | 4-6 hours | Beginner |
+| Phase 2 | 4 labs | 6-8 hours | Intermediate |
+| Phase 3 | 5 labs | 8-10 hours | Intermediate |
+| Phase 4 | 6 labs | 10-12 hours | Advanced |
+| **Capstone** | **7 modules** | **40-60 hours** | **Advanced** |
+| **Total** | **25** | **68-96 hours** | **Progressive** |
 
 ---
 

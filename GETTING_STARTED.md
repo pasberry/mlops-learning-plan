@@ -144,6 +144,29 @@ Deploy models, implement monitoring, close the feedback loop.
 
 ---
 
+### **🏆 Capstone Project: Mini Feed Ranking System** (2-3 weeks)
+Build an end-to-end MLOps system integrating all Phase 1-4 concepts.
+
+**Start here**: `docs/capstone/README.md`
+
+**Modules**:
+1. [System Design & Architecture](docs/capstone/module1_system_design.md)
+2. [ETL & Feature Engineering](docs/capstone/module2_data_pipeline.md)
+3. [Training Pipeline](docs/capstone/module3_training_pipeline.md)
+4. [Model Serving](docs/capstone/module4_model_serving.md)
+5. [Monitoring & Drift](docs/capstone/module5_monitoring.md)
+6. [Retraining & Promotion](docs/capstone/module6_retraining.md)
+7. [Integration & Documentation](docs/capstone/module7_integration.md)
+
+**What you'll build**:
+- Complete feed ranking system (like Meta/TikTok)
+- Automated pipeline: data → train → serve → monitor → retrain
+- Portfolio-quality project for interviews
+
+**Complete when**: You have a production-ready, end-to-end MLOps system
+
+---
+
 ## 🎯 How to Use This Course
 
 ### For Self-Paced Learning
@@ -156,9 +179,15 @@ Deploy models, implement monitoring, close the feedback loop.
 
 ### Time Commitment
 
+**Core Course (Phases 1-4)**:
 - **Minimum**: 10 hours/week → Complete in 8-10 weeks
 - **Recommended**: 15 hours/week → Complete in 6-8 weeks
 - **Intensive**: 20+ hours/week → Complete in 4-6 weeks
+
+**With Capstone**:
+- **Minimum**: 10 hours/week → Complete in 11-13 weeks
+- **Recommended**: 15 hours/week → Complete in 9-11 weeks
+- **Intensive**: 20+ hours/week → Complete in 6-9 weeks
 
 ### Learning Tips
 
