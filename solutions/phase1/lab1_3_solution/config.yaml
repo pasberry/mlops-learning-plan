@@ -1,0 +1,64 @@
+# MNIST Training Configuration - SOLUTION
+# Complete configuration file demonstrating best practices
+
+# Experiment metadata
+experiment:
+  name: "mnist_baseline"
+  description: "Baseline MNIST classifier with CNN"
+  tags:
+    - mnist
+    - cnn
+    - baseline
+    - phase1
+
+# Data configuration
+data:
+  dataset: "MNIST"
+  data_dir: "./data"
+  train_split: 0.9
+  val_split: 0.1
+  num_workers: 2
+
+# Model configuration
+model:
+  name: "ConfigurableCNN"
+  architecture:
+    conv1_channels: 32
+    conv2_channels: 64
+    fc1_size: 128
+    dropout_conv: 0.25
+    dropout_fc: 0.5
+
+# Training configuration
+training:
+  batch_size: 64
+  num_epochs: 10
+  learning_rate: 0.001
+  optimizer: "adam"
+  weight_decay: 0.0001
+
+  # Learning rate scheduler
+  scheduler:
+    enabled: true
+    type: "ReduceLROnPlateau"
+    factor: 0.5
+    patience: 2
+    min_lr: 0.00001
+
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 5
+    min_delta: 0.001
+
+# Logging and checkpointing
+logging:
+  log_interval: 100  # Log every N batches
+  checkpoint_dir: "./models/staging/mnist"
+  save_best_only: false
+  tensorboard_dir: "./runs"
+
+# Hardware
+device:
+  use_cuda: true  # Use GPU if available
+  seed: 42  # Random seed for reproducibility
